@@ -1,0 +1,18 @@
+import React from 'react'
+
+function Search({searchTerm,setSearchTerm}) {
+  return (
+    <div className="search">
+     <div>
+        <img src="Vector.svg" alt="search" />
+        <input type="text" 
+        placeholder='search through thousands of movies'
+        value={searchTerm}
+        onChange={(e)=>setSearchTerm(e.target.value)}
+        />
+     </div>
+    </div>
+  )
+}
+
+export default Search
